@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap sort -d --version-sort tr '\n' ',' sed 's/,$/\n/'
+ls -Ap | LC_COLLATE=C sort | tr '\n' ',' | sed 's/,$/\n/'
